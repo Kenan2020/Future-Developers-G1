@@ -40,6 +40,64 @@
   letter-spacing: 3px;
   /* width: 10vw; */
   background-color: rgba(238, 238, 238, 0.509);
+  transition-duration: 0.5s;
+}
+
+.nav li{
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #0098A8
+  
+}
+
+.nav li a:hover{
+  background-image: linear-gradient(to bottom left, #0098A8, #7300bf);
+  color: white;
+}
+
+.nav li:last-child{
+  float: right;
+  margin-right: 20px;
+}
+
+.nav li:first-child{
+  background-color: rgba(240, 248, 255, 0);
+  }
+  /* End of Navigation Bar */
+
+   /* Navigation Bars 1024px */
+   .nav li{
+    margin-left: 5px;
+}
+.nav img{
+    margin-left: 10%;
+    margin-right: 10px;
+}
+.nav li:last-child{
+    float: right;
+    margin-right: unset;
+}
+
+.nav li{
+  margin: 0;
+}
+/* End of Navigation Bar */
+ /* End of Navigation Bar */
+ .headContainer{
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 15%;
+  grid-row: auto auto;
+  margin-bottom: 200px;
+}
+
+@media only screen and (max-width: 767px){
+  /* Navigation Bars 700px */
+  .nav{
+      display: grid;
+      position: unset;
+  }
 }
 body {
   background-image: url(../imgs/screenfix.png);
@@ -94,7 +152,7 @@ input[type=submit]:hover {
   width: 35%;
   float: left;
   padding-left: 10px;
-  padding-top: 200px;
+  padding-top: 150px;
   /*position: fixed;*/
 }
 
