@@ -17,6 +17,7 @@ body {
 .contactForm{
   margin-left: 20px;
   position: fixed;
+  color: rgb(43, 76, 226);
 }
 
 input[type=text], select, textarea {
