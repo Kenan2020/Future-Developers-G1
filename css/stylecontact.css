@@ -39,7 +39,7 @@
   justify-content: center;
   letter-spacing: 3px;
   /* width: 10vw; */
-  background-color: rgba(238, 238, 238, 0.509);
+  background-color:rgb(238, 238, 238);
   transition-duration: 0.5s;
 }
 
@@ -47,7 +47,7 @@
   float: left;
   margin-top: 20px;
   margin-left: 20px;
-  color: #0098A8
+ 
   
 }
 
@@ -64,34 +64,27 @@
 .nav li:first-child{
   background-color: rgba(240, 248, 255, 0);
   }
+
   /* End of Navigation Bar */
-
-   /* Navigation Bars 1024px */
-   .nav li{
-    margin-left: 5px;
-}
-.nav img{
-    margin-left: 10%;
-    margin-right: 10px;
-}
-.nav li:last-child{
-    float: right;
-    margin-right: unset;
-}
-
-.nav li{
-  margin: 0;
-}
-/* End of Navigation Bar */
- /* End of Navigation Bar */
- .headContainer{
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 15%;
-  grid-row: auto auto;
-  margin-bottom: 200px;
-}
-
+  @media only screen and (max-width: 1200px){
+    /* Navigation Bars 1024px */
+      .nav li{
+          margin-left: 5px;
+      }
+      .nav img{
+          margin-left: 10%;
+          margin-right: 10px;
+      }
+      .nav li:last-child{
+          float: right;
+          margin-right: unset;
+         
+      }
+        /* End of Navigation Bar */
+    }
+   
+   
+ 
 @media only screen and (max-width: 767px){
   /* Navigation Bars 700px */
   .nav{
@@ -152,7 +145,7 @@ input[type=submit]:hover {
   width: 35%;
   float: left;
   padding-left: 10px;
-  padding-top: 150px;
+  padding-top: 70px;
   /*position: fixed;*/
 }
 
@@ -160,7 +153,7 @@ input[type=submit]:hover {
 /* Footer styling*/
 .footer {
     text-align: left;
-    background: #333;
+    background: rgba(51, 51, 51, 0.514);
     color: #fff;
     padding: 5px;
     float: left;
