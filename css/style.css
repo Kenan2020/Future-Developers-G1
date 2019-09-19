@@ -65,6 +65,7 @@ GRID-AREAS; allows to specify where to place an item*/
     font-size: 2rem;
     margin-top: 3px;
     padding-top: 10px;
+    
 }
 
 .headingPrimary {
@@ -121,6 +122,7 @@ article {
     justify-content: center;
     align-items: center;
     padding: 8px;
+    margin:  15px 0px 0px;
 }
 
 .p1,
