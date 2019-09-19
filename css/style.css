@@ -28,7 +28,6 @@ GRID-AREAS; allows to specify where to place an item*/
 /*using gridLayout*/
 .gridContainer {
     display: grid;
-    /*grid-template:*/
     grid-template-columns: repeat(6, auto);
     grid-template-areas:
         'gridAbt gridAbt gridAbt gridAbt gridAbt gridAbt'
@@ -37,13 +36,9 @@ GRID-AREAS; allows to specify where to place an item*/
     grid-template-rows: 15% auto 20%;
     grid-gap: 10px;
     height: 100vh;
-    /*padding: 10px;
-    margin-top: 10px;*/
     width: 100vw;
     background-image: url(../imgs/colorbackground1.png);
-        /***********************************/
-        /*background-image: linear-gradient(to right bottom, #0098A8,  #7300bf, url(../imgs/colorbackground1.png);*/
-        background-size: cover;
+    background-size: cover;
     background-position: top;
     position: relative;
 }
@@ -56,22 +51,11 @@ GRID-AREAS; allows to specify where to place an item*/
     }
 }
 
-@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-only screen and (min-width: 125em) {
-    /*.gridContainer {
-        background-image: linear-gradient(to right bottom, #0098A8, #7300bf,
-             url(../imgs/screenfix.png)
-            );*/
-    }
-
-
 @media only screen and (max-width: 37.5em) {
     .gridContainer {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
-
 }
 
 .gridAbts {
@@ -100,7 +84,6 @@ only screen and (min-width: 125em) {
     letter-spacing: 1.25rem;
     padding-top: 15px;
     text-align: center;
-    /********************/
     display: inline-flex;
     letter-spacing: .2rem;
     transition: all .2s;
@@ -121,22 +104,34 @@ only screen and (min-width: 125em) {
 .headingAbout:hover {
     transform: skewY(2deg) skewX(30deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
-    /*********************/
 }
 
+.gridArt{
+    grid-area: gridArt;
+    margin: 30px;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+}
 article {
     color: #4d4d4d;
     grid-area: gridArt;
     font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
 }
 
 .p1,
 .p2 {
-    margin: 5px;
-    padding: 10px;
+    margin: 15px 0px 0px;
+    padding: 20px;
     line-height: 2.2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 200;
+    display: inline-flex;
+    text-justify: auto;
 }
 
 .gridPic {
@@ -155,15 +150,6 @@ article {
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 30px;
-}
-
-.gridArt{
-    margin: 10px;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: antiquewhite;
-    
-  
 }
 
 :root {
