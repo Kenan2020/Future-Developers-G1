@@ -16,6 +16,7 @@ body {
 }
 .contactForm{
   margin-left: 20px;
+  position: fixed;
 }
 
 input[type=text], select, textarea {
@@ -54,16 +55,16 @@ input[type=submit]:hover {
 .container2{
   width: 60%;
   float: left;
+  
  
   
 }
 .container3{
-  width: 40%;
-  height: 80%;
+  width: 35%;
   float: left;
-  padding-left: 20px;
-  padding-top: 20px;
-  
+  padding-left: 800px;
+  padding-top: 100px;
+  position: fixed;
 }
 
 
