@@ -7,6 +7,7 @@ body{
   background-image: url(../image/screenfix.png);
   background-size: cover;
   background-repeat: repeat;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -144,6 +145,17 @@ background-color: rgba(240, 248, 255, 0);
     content:'\00BB';
   }
   
+  .text{
+    top: 0px;
+    position:relative;
+    width:600px;
+    padding: 10px;
+    margin:20px auto;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom left, #0098A8, #7300bf);
+  }
 
   @media only screen and (max-width: 1024px){
     /* Navigation Bars 1024px */
@@ -159,6 +171,7 @@ background-color: rgba(240, 248, 255, 0);
         width: 600px;
     }
   }
+
 
 
   @media only screen and (max-width: 700px){
