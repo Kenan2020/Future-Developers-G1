@@ -1,5 +1,10 @@
 /*Reset to clear default browser settings including border box*/
 
+body {
+  background-image: url(../imgs/screenfix.png);
+  background-size: 1200px;
+}
+
 :root {
   --maincolor: #4d4d4d;
   --subcolor: #1f3c49;
@@ -43,10 +48,9 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: white;
+  /*background-color: white;*/
   padding: 20px;
-  background-image: url(../imgs/screenfix.png);
-  background-size: 1200px;
+
 }
 
 
