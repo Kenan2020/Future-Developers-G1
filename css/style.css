@@ -11,6 +11,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
     background-image: url(../imgs/screenfix.png);
+    background-size: 1200px;
+    background-repeat: repeat;
 }
 
 /*dividing page in grid-areas; naming grid items by using the shorthand property
@@ -158,6 +160,8 @@ article {
 .gridArt{
     margin: 10px;
     padding: 10px;
+    border-radius: 50%;
+    background-color: antiquewhite;
     
   
 }
