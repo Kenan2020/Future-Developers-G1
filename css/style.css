@@ -247,7 +247,6 @@ article {
 .members > div > .tip{
     visibility: hidden;
     position: absolute;
-
     left: 5%;
     width: 90%;
     background-color: var(--maincolor);
