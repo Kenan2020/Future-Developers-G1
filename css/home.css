@@ -43,13 +43,14 @@ a{
     letter-spacing: 3px;
     /* width: 10vw; */
     background-color: rgba(238, 238, 238, 0.509);
+    transition-duration: 0.5s;
 }
 
 .nav li{
     float: left;
     margin-top: 20px;
     margin-left: 20px;
-    transition-duration: 0.5s;
+    
 }
 
 .nav li a:hover{
