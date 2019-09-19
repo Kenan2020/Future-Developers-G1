@@ -13,7 +13,6 @@ a{
 }
 #home{
     width: 100%;
-    /* height: 150vh; */
 }
 
 /* Navigation Bar */
@@ -102,13 +101,13 @@ background-color: rgba(240, 248, 255, 0);
 
 /* Slider */
 
-.sliderContainer{
+.keyframesContainer{
     margin-top: 200px;
     grid-column-start: 2;
     grid-column-end: 2;
     /* border: #7300bf solid 1px; */
 }
-.slider{
+.keyframes{
     width: 450px;
     height: 450px;
     background-size: 450px;
@@ -150,7 +149,6 @@ background-color: rgba(240, 248, 255, 0);
         margin-bottom: 200px;
     }
 
-
     .headContent{
         margin-top: 0px;
         grid-column-start: 1;
@@ -160,7 +158,7 @@ background-color: rgba(240, 248, 255, 0);
         width: 90%;
     }
 
-    .sliderContainer{
+    .keyframesContainer{
         margin-top: 200px;
         margin-left: 20%;
         width: 50%;
@@ -172,7 +170,7 @@ background-color: rgba(240, 248, 255, 0);
         align-content: center;
     }
 
-    .slider{
+    .keyframes{
         margin-top: 0px;
     }        
 }
@@ -198,7 +196,7 @@ background-color: rgba(240, 248, 255, 0);
         width: 80%;
         margin-left: 10%;
     }
-    .sliderContainer{
+    .keyframesContainer{
         margin-top: 50px;
         margin-left: 5%;
         width: auto;
