@@ -107,14 +107,14 @@ GRID-AREAS; allows to specify where to place an item*/
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.gridArt{
+/*.gridArt{
     grid-area: gridArt;
     margin: 30px;
     padding: 10px;
     padding-left: 15px;
     border-radius: 50%;
     background-color: antiquewhite;
-}
+} 
 article {
     color: #4d4d4d;
     grid-area: gridArt;
@@ -134,7 +134,7 @@ article {
     font-weight: 200;
     display: inline-flex;
     text-justify: auto;
-}
+} */
 
 /*******CARD HOVER STYLE PICTURE*****/
 
@@ -150,16 +150,14 @@ article {
 
 .container .card .face.face1{
     position: relative;
-    /*background: #333;*/
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 3;
     transform: translateY(100px);
 }
 
 .container .card:hover .face.face1{
-    /*background: #ff0057;*/
     transform: translateY(0);
 }
 
@@ -196,7 +194,7 @@ article {
 .gPic {
     grid-area: gridPic;
     margin: 10px;
-    padding: 2px;
+    padding: 20px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 30px;
