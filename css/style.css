@@ -179,22 +179,22 @@ article {
 }
 
 .members {
+    height: 83vh;
     display: grid;
     grid-template-columns: 25% 25% 25% auto;
     grid-row-gap: 20px;
-    justify-content: center
+    justify-content: center;
+    overflow: scroll
     
 }
 .members > div{
     text-align: center;
-    display: block;
-    text-decoration: none;
     width: 15vw;
     color: var(--maincolor);
     padding: 10px 10px 20px 10px;
     border: 2px solid var(--bgcolor);
     border-radius: 5px;
-    background-color: white;
+    background-color:#fff;
     position: relative;
     font-size: 1rem;
     box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
@@ -202,15 +202,13 @@ article {
 .members > div > .tip{
     visibility: hidden;
     position: absolute;
-    bottom: 25%;
-    left: 0%;
-    width: 100%;
-    background-color: var(--bgcolor1);
-    border-radius: 5px
-
+    left: 5%;
+    width: 90%;
+    background-color: var(--maincolor);
+    border-top: 2px solid #fff;
+    border-bottom: 3px solid #fff
 }
 .members > div > img{
-    margin: 0 0 15px;
     width: 100%;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 }
@@ -218,30 +216,52 @@ article {
 .members > div:hover{
     border-color: #6A6A6A;
     cursor: pointer;
-}
-.members > div:hover > img{
-    opacity: .4
+    animation: animateColor 2s forwards;
 }
 .members > div:hover > .tip{
+    text-align: center;
     visibility: visible;
-
+    color: #fff;
+    opacity: .6;
+    animation: animateText 1.5s forwards;
 }
 .members > div:hover > p{
-    display: block
+    display: block;
 }
 .members > div:hover > .tip > a{
     display: block;
     text-decoration: none;
     text-transform: capitalize;
+    color:#fff;
+    font-weight: bold;
     font-size: .75rem;
     line-height: 1.5rem
 }
 .members > div > .tip > a:hover{
-    background-color: var(--bgcolor)
+    background-color: var(--bgcolor);
+    font-weight: bold;
+    font-size: .8rem;
+    border-radius: 10px;
+    color: var(--subcolor)
     
 }
 
-
+@keyframes animateText{
+    from{
+        bottom:0%;
+    }
+    to{
+        bottom: 25%;
+    }
+}
+@keyframes animateColor{
+    from{
+        background-image: linear-gradient(to top left, var(--subcolor), #FFF);
+    }
+    to{
+        background-image: linear-gradient(to bottom left, #0098A8, #7300bf);
+    }
+}
 
 @media(max-width:767px) {/*for mobile phone*/
 
