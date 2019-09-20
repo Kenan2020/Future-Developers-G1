@@ -9,7 +9,8 @@
 /*general stuff*/
 body {
     font-family: Arial, Helvetica, sans-serif;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
     background-image: url(../imgs/screenfix.png);
     background-size: 1200px;
     background-repeat: repeat;
@@ -33,7 +34,7 @@ GRID-AREAS; allows to specify where to place an item*/
         'gridAbt gridAbt gridAbt gridAbt gridAbt gridAbt'
         'gridArt gridArt gridArt gridPic gridPic gridPic'
         'gridArt gridArt gridArt gridPic gridPic gridPic';
-    grid-template-rows: 15% auto 20%;
+    grid-template-rows: 20% 60% 20%;
     grid-gap: 10px;
     height: 100vh;
     width: 100vw;
@@ -45,16 +46,16 @@ GRID-AREAS; allows to specify where to place an item*/
 
 @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .gridContainer {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 82vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 82vh, 0 100%);
-        height: 100vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+        height: 148vh;
     }
 }
 
 @media only screen and (max-width: 37.5em) {
     .gridContainer {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 42vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 42vh, 0 100%);
     }
 }
 
@@ -140,11 +141,11 @@ article {
 
 .container .card{
     position: relative;
+    width: 600px;
+    height: 400px;
 }
 
 .container .card .face{
-    width: 600px;
-    height: 400px;
     transition: 0.5s;
 }
 
@@ -154,7 +155,7 @@ article {
     justify-content: center;
     align-items: center;
     z-index: 3;
-    transform: translateY(100px);
+    transform: translateX(600px);
 }
 
 .container .card:hover .face.face1{
@@ -171,15 +172,38 @@ article {
 }
 
 .container .card .face.face1 .content img{
-    max-width: 100px;
+    max-width: 600px;
 }
 
-.container .card .face.face1 .content h3{
-    margin: 10px 0 0;
-    padding: 0;
-    /*color: #fff;*/
-    text-align: center;
-    font-size: 1.5em;
+
+/******************FACE 2*****************/
+.container .card .face.face2 {
+    position: relative;
+    background-image: url(../imgs/screenfix.png);
+    background-size: 1200px;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    box-sizing: border-box;
+    transform: translateY(-208px);
+    margin: 44,5px;
+    padding: 20px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 30px;
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content {
+    margin: 10px;
+    padding: 5px;
+    height: 600px;
+    width: 400px;
+    text-align: center; 
 }
 
 .gridPic {
@@ -223,23 +247,23 @@ article {
 }
 
 .members {
-    height: 83vh;
     display: grid;
     
     grid-template-columns: 25% 25% 25% auto;
     grid-row-gap: 20px;
-    justify-content: center;
-    overflow: scroll
+    justify-content: center
     
 }
 .members > div{
     text-align: center;
+    display: block;
+    text-decoration: none;
     width: 15vw;
     color: var(--maincolor);
     padding: 10px 10px 20px 10px;
     border: 2px solid #BFBFBF;
     border-radius: 5px;
-    background-color:#fff;
+    background-color: white;
     position: relative;
     font-size: 1rem;
     box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
@@ -247,6 +271,7 @@ article {
 .members > div > .tip{
     visibility: hidden;
     position: absolute;
+
     left: 5%;
     width: 90%;
     background-color: var(--maincolor);
@@ -255,6 +280,7 @@ article {
 
 }
 .members > div > img{
+    margin: 0 0 15px;
     width: 100%;
     border-radius: 5px
 }
@@ -262,53 +288,30 @@ article {
 .members > div:hover{
     border-color: #6A6A6A;
     cursor: pointer;
-    animation: animateColor 2s forwards;
+}
+.members > div:hover > img{
+    opacity: .4
 }
 .members > div:hover > .tip{
-    text-align: center;
     visibility: visible;
-    color: #fff;
-    opacity: .6;
-    animation: animateText 1.5s forwards;
+
 }
 .members > div:hover > p{
-    display: block;
+    display: block
 }
 .members > div:hover > .tip > a{
     display: block;
     text-decoration: none;
     text-transform: capitalize;
-    color:#fff;
-    font-weight: bold;
     font-size: .75rem;
     line-height: 1.5rem
 }
 .members > div > .tip > a:hover{
-
-    background-color: var(--bgcolor);
-    font-weight: bold;
-    font-size: .8rem;
-    border-radius: 10px;
-    color: var(--subcolor)
+    background-color: yellow
     
 }
 
-@keyframes animateText{
-    from{
-        bottom:0%;
-    }
-    to{
-        bottom: 25%;
-    }
-}
-@keyframes animateColor{
-    from{
-        background-image: linear-gradient(to top left, var(--subcolor), #FFF);
-    }
-    to{
-        background-image: linear-gradient(to bottom left, #0098A8, #7300bf);
-    }
-}
+
 
 @media(max-width:767px) {/*for mobile phone*/
 
