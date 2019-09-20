@@ -271,11 +271,12 @@ article {
 .members > div > .tip{
     visibility: hidden;
     position: absolute;
-    bottom: 25%;
-    left: 0%;
-    width: 100%;
-    background-color: aquamarine;
-    border-radius: 5px
+
+    left: 5%;
+    width: 90%;
+    background-color: var(--maincolor);
+    border-top: 2px solid #fff;
+    border-bottom: 3px solid #fff
 
 }
 .members > div > img{

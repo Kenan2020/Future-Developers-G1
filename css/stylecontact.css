@@ -10,13 +10,94 @@
     box-sizing: border-box; 
 }
 
+#home{
+  width: 100%;
+}
+
+/* Navigation Bar */
+.nav{
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  /* display: inline; */
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+.nav img{
+  height: 40px;
+  margin-top: 7px;
+  margin-left: 25px;
+}
+
+.nav a{
+  padding: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1F3C49;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  letter-spacing: 3px;
+  /* width: 10vw; */
+  background-color:rgb(238, 238, 238);
+  transition-duration: 0.5s;
+}
+
+.nav li{
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+ 
+  
+}
+
+.nav li a:hover{
+  background-image: linear-gradient(to bottom left, #0098A8, #7300bf);
+  color: white;
+}
+
+.nav li:last-child{
+  float: right;
+  margin-right: 20px;
+}
+
+.nav li:first-child{
+  background-color: rgba(240, 248, 255, 0);
+  }
+
+  /* End of Navigation Bar */
+  @media only screen and (max-width: 1200px){
+    /* Navigation Bars 1024px */
+      .nav li{
+          margin-left: 5px;
+      }
+      .nav img{
+          margin-left: 10%;
+          margin-right: 10px;
+      }
+      .nav li:last-child{
+          float: right;
+          margin-right: unset;
+         
+      }
+        /* End of Navigation Bar */
+    }
+   
+   
+ 
+@media only screen and (max-width: 767px){
+  /* Navigation Bars 700px */
+  .nav{
+      display: grid;
+      position: unset;
+  }
+}
 body {
   background-image: url(../imgs/screenfix.png);
   background-size: 1200px;
 }
 .contactForm{
   margin-left: 20px;
-  position: fixed;
   color: rgb(43, 76, 226);
 }
 
@@ -63,16 +144,16 @@ input[type=submit]:hover {
 .container3{
   width: 35%;
   float: left;
-  padding-left: 800px;
-  padding-top: 100px;
-  position: fixed;
+  padding-left: 10px;
+  padding-top: 70px;
+  /*position: fixed;*/
 }
 
 
 /* Footer styling*/
 .footer {
     text-align: left;
-    background: #333;
+    background: rgba(51, 51, 51, 0.514);
     color: #fff;
     padding: 5px;
     float: left;
