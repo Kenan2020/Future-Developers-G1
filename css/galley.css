@@ -13,9 +13,11 @@ body{
 #gallery{
         width: 100%;
     }
+
+/* Navigation Bar */
 a{
     text-decoration: none;}
-/* Navigation Bar */
+    
 .nav{
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
