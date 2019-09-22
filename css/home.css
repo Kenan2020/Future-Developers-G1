@@ -127,7 +127,7 @@ background-color: rgba(240, 248, 255, 0);
     1%{background-image: url(../image/illu1.png)}
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (min-width: 768px){
 
 /* Navigation Bars 1024px */
     .nav li{
@@ -186,23 +186,51 @@ background-color: rgba(240, 248, 255, 0);
         position: unset;
     }
 
-    .nav li{
-        margin: 0;
+    header{
+        width: 100%;
     }
 
+    .nav li{
+        margin: 0;
+        width: 100vw;
+    }
+
+    .nav a{
+        width: 100vw;
+    }
 
     /* End of Navigation Bar */
 
-
+    .headContainer{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 15%;
+        grid-row: auto auto;
+        margin-bottom: 200px;
+    }
+    
     .headContent{
-        margin-top: 40px;
-        width: 80%;
-        margin-left: 10%;
+        margin-top: 0px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        width: 90%;
+        margin-right: 5%;
     }
     .keyframesContainer{
         margin-top: 50px;
         margin-left: 5%;
-        width: auto;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
         /* border: solid 1px black; */
+    }
+
+    .keyframes{
+        width: 90%;
+        background-size: 75%;
     }
 }
