@@ -127,7 +127,7 @@ background-color: rgba(240, 248, 255, 0);
     1%{background-image: url(../image/illu1.png)}
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 1024px){
 
 /* Navigation Bars 1024px */
     .nav li{
