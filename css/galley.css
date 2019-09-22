@@ -5,7 +5,7 @@
 
 body{
   background-image: url(../image/screenfix.png);
-  background-size: cover;
+  background-size: 1200px;
   background-repeat: repeat;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -86,7 +86,7 @@ background-color: rgba(240, 248, 255, 0);
   }
   .slider > input {
     position:absolute;
-    left:-9999px;
+    opacity: 0;
   }
   .slider > input:checked + label + img {
     display:block;
@@ -164,7 +164,7 @@ background-color: rgba(240, 248, 255, 0);
     background-image: linear-gradient(to bottom left, #0098A8, #7300bf);
   }
 
-  @media only screen and (max-width: 1024px){
+  @media only screen and (min-width: 768px){
     /* Navigation Bars 1024px */
         .nav li{
             margin-left: 5px;
@@ -186,7 +186,7 @@ background-color: rgba(240, 248, 255, 0);
 
 
 
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 767px){
 
     /* Navigation Bars 700px */
     .nav{
@@ -198,14 +198,18 @@ background-color: rgba(240, 248, 255, 0);
         margin: 0;
     }
 
+    .nav a{
+      width: 100vw;
+  }
+
     /* End of Navigation Bar */
 
 
     .slider {
-        width: 480px;
+        width: 80%;
     }
     .text{
-        width: 480px;
+        width: 80%;
         font-size: 15px;
     }
 }
