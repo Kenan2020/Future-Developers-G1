@@ -27,6 +27,10 @@
   height: 40px;
   margin-top: 7px;
   margin-left: 25px;
+  color: none;
+  background-color: none;
+  /*padding-bottom: 25px;*/
+  
 }
 
 .nav a{
