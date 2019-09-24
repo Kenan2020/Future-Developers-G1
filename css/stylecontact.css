@@ -15,6 +15,20 @@
 }
 
 /* Navigation Bar */
+
+
+@keyframes slideInFromLeft{
+  0%{
+      transform: translateX(-100%);
+  }
+  100%{
+      transform: translateX(0);
+  }
+ }
+ header{
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+ }
+
 .nav{
   list-style-type: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -32,12 +46,14 @@
   /*padding-bottom: 25px;*/
   
 }
+
+/*////////////////////////////////*/
 #logo {
   list-style: none;
   background-color: none;
   border-radius: 25px;
-  
-  
+  opacity: 0.5;
+  color: none; 
 }
 
 .nav a{
@@ -50,7 +66,7 @@
   justify-content: center;
   letter-spacing: 3px;
   /* width: 10vw; */
-  background-color:rgb(238, 238, 238);
+  background-color:rgba(238, 238, 238, 0.509);
   transition-duration: 0.5s;
 }
 
@@ -98,10 +114,36 @@
  
 @media only screen and (max-width: 767px){
   /* Navigation Bars 700px */
-  .nav{
-      display: grid;
-      position: unset;
-  }
+
+  @keyframes slideInFromTop{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+header{
+  animation: 0.75s ease-out 0s 1 slideInFromTop;
+}
+.nav{
+  display: grid;
+  position: unset;
+}
+.nav li{
+  margin: 0;
+}
+.nav a{
+width: 100vw;
+}
+/* End of Navigation Bar */
+.slider {
+  width: 80%;
+}
+.text{
+  width: 80%;
+  font-size: 15px;
+}
 }
 body {
   background-image: url(../imgs/screenfix.png);
@@ -167,12 +209,13 @@ input[type=submit]:hover {
  
   
 }
-.container3{
+.container3 img{
+
   width: 35%;
   float: left;
-  padding-left: 10px;
+  /*padding-left: 10px;
   padding-top: 70px;
-  /*position: fixed;*/
+  position: flex;*/
 }
 
 
@@ -181,7 +224,7 @@ input[type=submit]:hover {
     text-align: left;
     background: rgba(51, 51, 51, 0.514);
     color: #fff;
-    padding: 5px;
+    padding: 20px;
     float: left;
     width: 100%;
     
