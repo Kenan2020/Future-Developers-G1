@@ -15,6 +15,18 @@ body{
     }
 
 /* Navigation Bar */
+@keyframes slideInFromLeft{
+  0%{
+      transform: translateX(-100%);
+  }
+  100%{
+      transform: translateX(0);
+  }
+}
+header{
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
 a{
     text-decoration: none;}
     
@@ -164,8 +176,9 @@ background-color: rgba(240, 248, 255, 0);
     background-image: linear-gradient(to bottom left, #0098A8, #7300bf);
   }
 
-  @media only screen and (min-width: 768px){
+  @media only screen and (max-width: 1024px){
     /* Navigation Bars 1024px */
+
         .nav li{
             margin-left: 5px;
         }
@@ -189,6 +202,19 @@ background-color: rgba(240, 248, 255, 0);
   @media only screen and (max-width: 767px){
 
     /* Navigation Bars 700px */
+    @keyframes slideInFromTop{
+      0%{
+          transform: translateY(-100%);
+      }
+      100%{
+          transform: translateY(0);
+      }
+  }
+  header{
+    animation: 0.75s ease-out 0s 1 slideInFromTop;
+  }
+
+
     .nav{
         display: grid;
         position: unset;

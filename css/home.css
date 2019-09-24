@@ -16,6 +16,19 @@ a{
 }
 
 /* Navigation Bar */
+
+@keyframes slideInFromLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+header{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
 .nav{
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -127,6 +140,8 @@ background-color: rgba(240, 248, 255, 0);
     1%{background-image: url(../image/illu1.png)}
 }
 
+
+
 @media only screen and (max-width: 1024px){
 
 /* Navigation Bars 1024px */
@@ -181,26 +196,33 @@ background-color: rgba(240, 248, 255, 0);
 @media only screen and (max-width: 767px){
 
     /* Navigation Bars 700px */
-    .nav{
-        display: grid;
-        position: unset;
+    @keyframes slideInFromTop{
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(0);
+        }
     }
-
     header{
-        width: 100%;
+      animation: 0.75s ease-out 0s 1 slideInFromTop;
     }
-
-    .nav li{
-        margin: 0;
+  
+  
+      .nav{
+          display: grid;
+          position: unset;
+      }
+  
+      .nav li{
+          margin: 0;
+      }
+  
+      .nav a{
         width: 100vw;
     }
-
-    .nav a{
-        width: 100vw;
-    }
-
-    /* End of Navigation Bar */
-
+  
+      /* End of Navigation Bar */
     .headContainer{
         display: grid;
         grid-template-columns: auto;
