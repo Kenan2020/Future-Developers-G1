@@ -298,6 +298,8 @@ article {
     visibility: visible;
     top: 25%;
     opacity: .7;
+    animation: ani1 1s linear
+
 
 }
 .members > div:hover > p{
@@ -319,7 +321,14 @@ article {
     color: #FFF
     
 }
-
+@keyframes ani1{
+    0%{
+        top: 0%;
+    }
+    100%{
+        top: 25%;
+    }
+}
 
 
 @media(max-width:767px) {/*for mobile phone*/
