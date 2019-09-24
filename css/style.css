@@ -258,16 +258,14 @@ article {
 .members > div{
     text-align: center;
     display: block;
-    text-decoration: none;
     width: 15vw;
     color: var(--maincolor);
     padding: 10px 10px 20px 10px;
-    border: 2px solid #BFBFBF;
+    border: 2px solid #ddd;
     border-radius: 5px;
     background-color: white;
     position: relative;
     font-size: 1rem;
-    box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
 }
 .members > div > .tip{
     visibility: hidden;
@@ -275,7 +273,7 @@ article {
     
     left: 5%;
     width: 90%;
-    background-color: var(--maincolor);
+    background-color: #ddd;
     border-top: 2px solid #fff;
     border-bottom: 3px solid #fff
 
@@ -283,18 +281,23 @@ article {
 .members > div > img{
     margin: 0 0 15px;
     width: 100%;
-    border-radius: 5px
+    border-radius: 5px;
+
+    border: 1px solid #ddd;
+    padding: 5px;
 }
 
 .members > div:hover{
-    border-color: #6A6A6A;
     cursor: pointer;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 .members > div:hover > img{
-    opacity: .4
+    opacity: .5
 }
 .members > div:hover > .tip{
     visibility: visible;
+    top: 25%;
+    opacity: .7;
 
 }
 .members > div:hover > p{
