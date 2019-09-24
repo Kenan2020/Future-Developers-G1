@@ -227,6 +227,7 @@ article {
 :root {
     --maincolor: #4d4d4d;
     --subcolor: #1f3c49;
+    --bgcolor: #d8dd0a;
     font-family: 'Courier New', Courier, monospace;
 }
 .about{
@@ -307,7 +308,12 @@ article {
     line-height: 1.5rem
 }
 .members > div > .tip > a:hover{
-    background-color: yellow
+
+    background-color: var(--bgcolor);
+    font-weight: bold;
+    font-size: .8rem;
+    border-radius: 10px;
+    color: #FFF
     
 }
 
