@@ -32,6 +32,13 @@
   /*padding-bottom: 25px;*/
   
 }
+#logo {
+  list-style: none;
+  background-color: none;
+  border-radius: 25px;
+  
+  
+}
 
 .nav a{
   padding: 15px;
@@ -118,6 +125,21 @@ input[type=text], select, textarea {
   
   /*resize: vertical;*/
 }
+
+
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgb(76, 94,175);
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background-color: none;
+  
+  /*resize: vertical;*/
+}
+
 
 input[type=submit] {
   background-color: rgb(76, 94, 175);
