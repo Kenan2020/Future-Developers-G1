@@ -32,6 +32,12 @@
   /*padding-bottom: 25px;*/
   
 }
+#logo {
+  list-style: none;
+  background-color: none;
+  
+  
+}
 
 .nav a{
   padding: 15px;
