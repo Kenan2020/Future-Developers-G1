@@ -281,7 +281,7 @@ For zoom effect on hover image trasform is set to scale 2.*/
     color: whitesmoke;
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1024px){
 
   #dock-container {
     position:  fixed;
@@ -344,10 +344,20 @@ For zoom effect on hover image trasform is set to scale 2.*/
     position:  static;
     bottom: 0;
     text-align: center;
+    font-size: 11px;
     
-    width: 100%;
+    
+    width: 80%;
     /*background: rgba(3, 47, 243, 0.2);*/
-    border-radius: 55px 55px;
+    margin: auto;
+    height: 50px;;
+
+}
+#dock{
+  width: 100%;
+}
+#dock ul{
+  width: 100%;
 }
 
 #dock-container li {
@@ -355,11 +365,14 @@ For zoom effect on hover image trasform is set to scale 2.*/
   display: block;
   position: relative;
   float: left;
+  width: 12.5%;
+  min-width: 50px;
+
 }
 
 #dock-container li img {
-  width: 12.5%px;
   
+  width: 35px;
   border-radius: 25px;
   margin: 1px;
   -webkit-box-reflect: below 2px
@@ -372,7 +385,7 @@ For zoom effect on hover image trasform is set to scale 2.*/
   width: 100%;
 }
 .container3 {
-  width: 100%;
+  display: none;
 }
 .container3 img{
 
@@ -401,5 +414,16 @@ For zoom effect on hover image trasform is set to scale 2.*/
   display: block;
   color: whitesmoke;
 }
+
+.footer {
+  text-align: left;
+  background: rgba(51, 51, 51, 0.514);
+  color: #fff;
+  padding: 10px;
+  float: left;
+  width: 100%;
+  
+}
+
 
 }
