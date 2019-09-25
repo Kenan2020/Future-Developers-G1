@@ -202,11 +202,9 @@ input[type=submit]:hover {
   
 }
 .container3 img{
-
-  width: 35%;
-  /*padding-left: 10px;
-  padding-top: 70px;
-  position: flex;*/
+width: 35%;
+position: fixed;
+  
 }
 
 
@@ -215,7 +213,7 @@ input[type=submit]:hover {
     text-align: left;
     background: rgba(51, 51, 51, 0.514);
     color: #fff;
-    padding: 20px;
+    padding: 15px;
     float: left;
     width: 100%;
     
@@ -228,7 +226,7 @@ input[type=submit]:hover {
     position:  fixed;
     bottom: 0;
     text-align: center;
-    right: 20%;
+    right: 10%;
     left: 20%;
     width: 60%;
     /*background: rgba(3, 47, 243, 0.2);*/
@@ -388,7 +386,7 @@ For zoom effect on hover image trasform is set to scale 2.*/
   display: none;
 }
 .container3 img{
-
+  
   width: 100px;
   
 }
